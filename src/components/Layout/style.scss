@@ -1,0 +1,24 @@
+.ant-menu-item {
+    span {
+        display: inline-block;
+        width: 150px;
+        height: 100%;
+        a {
+           display: block;
+           text-decoration: none;
+           color: rgb(175, 170, 170);
+           
+
+        }
+    }
+}
+.ant-menu-item-active, .ant-menu-item-selected {
+    span {
+        
+        a {
+           
+           color:  #fff;
+        
+        }
+    }
+}

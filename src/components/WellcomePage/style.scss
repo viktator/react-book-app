@@ -1,0 +1,18 @@
+.wellcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .wellcome-text {
+        margin-top: 100px;
+        border: 2px solid #3f3f3f;
+        box-shadow: 0 0 15px;
+        color: #3f3f3f;
+         text-shadow: 0 2px 3px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 45px;
+        padding: 30px 80px;
+        border-radius: 50%;
+    }
+}
