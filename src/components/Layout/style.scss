@@ -12,6 +12,7 @@
         }
     }
 }
+
 .ant-menu-item-active, .ant-menu-item-selected {
     span {
         
@@ -21,4 +22,12 @@
         
         }
     }
+}
+.books_counter {
+    width: auto!important;
+    line-height: 18px;
+    padding: 5px;
+    background: #e82626;
+    border-radius: 5px;
+    font-weight: bold;
 }

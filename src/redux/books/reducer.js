@@ -1,8 +1,5 @@
 import { combineReducers } from 'redux'
-
 import { FETCH_FAILURE, FETCH_START, FETCH_SUCCESS, DELETE_BOOK, RECEIVE_FAVORITES } from './actions'
-
-
 
 
 export default combineReducers({
