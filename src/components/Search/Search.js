@@ -15,7 +15,7 @@ const Search = Input.Search;
      }
     
     handleApply = () => {
-    
+        
         this.props.fetchBooks({ q: this.searchInput.current.input.value }) 
         
          
@@ -37,8 +37,9 @@ const Search = Input.Search;
             
             {books.map(b => <Book onSave={this.props.saveBook} onDelete={this.props.deleteBook} key={b.id} {...b} />)}
             </div>
-            {this.props.loading && <Loader/> 
-                 
+            {this.props.loading ? 
+                <Loader/> :
+                 null
                 }
           </div>
         )
@@ -50,7 +51,8 @@ const Search = Input.Search;
 export default connect(
     (state => ({ 
         books: state.books.booksList,
-        loading: state.books.loading 
+        loading: state.books.loading ,
+
     })),
     { fetchBooks, deleteBook, saveBook }
 )(SearchInput)

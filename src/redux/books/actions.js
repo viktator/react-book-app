@@ -26,7 +26,7 @@ export const deleteFromSave = (id) => (dispatch, getState) => {
     dispatch(receiveFavBooks(localStorage.get('books')))
 }
 
-
+export const getBookFromLocalStorage = id => localStorage.get('books');
 
 
 export const fetchBooks = ({ q = '' }) => (dispatch) => {
@@ -37,7 +37,6 @@ export const fetchBooks = ({ q = '' }) => (dispatch) => {
     get('books/v1/volumes', { q }).then(data => {
         dispatch({ type: FETCH_SUCCESS, payload: data.data.items })
     }).catch(err => {
-        
         dispatch({ type: FETCH_FAILURE });
         
     })

@@ -2,7 +2,6 @@ import React from 'react';
 import {Layout, Menu, Breadcrumb, Icon,} from 'antd';
 import {Link } from "react-router-dom";
 import './style.scss'
-import {connect} from 'react-redux'
   
   const {
     Header, Content, Footer, Sider,
@@ -44,8 +43,7 @@ import {connect} from 'react-redux'
               <Menu.Item key="3">
                 <Icon type="book" />
                  <span>
-                <Link to="/favorite">Favorite <span className={'books_counter'}>{this.props.booksCounter}</span></Link>
-               
+                <Link to="/favorite">Favorite</Link>
                 </span>
               </Menu.Item>
             </Menu>
@@ -63,6 +61,4 @@ import {connect} from 'react-redux'
     }
   }
   
-export default connect((state) => ({
-  booksCounter: state.books.favoritesBooks.length || 0
-}))(SiderDemo) 
+export default SiderDemo
