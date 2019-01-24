@@ -16,8 +16,9 @@ const Search = Input.Search;
     
     handleApply = () => {
         
-        this.props.fetchBooks({ q: this.searchInput.current.input.value }) 
-        
+        this.props.fetchBooks({ q: this.searchInput.current.input.value })
+     
+
          
     }
 
@@ -43,7 +44,6 @@ const Search = Input.Search;
                 }
           </div>
         )
-       
     }
        
     

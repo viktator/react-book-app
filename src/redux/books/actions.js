@@ -26,7 +26,7 @@ export const deleteFromSave = (id) => (dispatch, getState) => {
     dispatch(receiveFavBooks(localStorage.get('books')))
 }
 
-export const getBookFromLocalStorage = id => localStorage.get('books');
+
 
 
 export const fetchBooks = ({ q = '' }) => (dispatch) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Layout, Menu, Breadcrumb, Icon,} from 'antd';
-import {Link } from "react-router-dom";
+import {connect} from 'react-redux'
+import {Link,withRouter } from "react-router-dom";
 import './style.scss'
   
   const {
@@ -43,7 +44,7 @@ import './style.scss'
               <Menu.Item key="3">
                 <Icon type="book" />
                  <span>
-                <Link to="/favorite">Favorite</Link>
+                <Link to="/favorite">Favorite<span className={'counter'}>{this.props.booksCount}</span></Link>
                 </span>
               </Menu.Item>
             </Menu>
@@ -61,4 +62,6 @@ import './style.scss'
     }
   }
   
-export default SiderDemo
+export default withRouter(connect((state) => ({
+  booksCount: state.books.favoritesBooks.length || 0
+}))(SiderDemo))

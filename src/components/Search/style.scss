@@ -5,7 +5,7 @@
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-    }   
+    }
 }
 .input-box {
     margin-top: 20px;
@@ -13,21 +13,36 @@
     width: 500px;
     border: 2px solid #3f3f3f;
     box-shadow: 0 0 15px;
-    border-radius: 7px;    
+    border-radius: 7px;
 }
 .ant-btn {
     width: 150px;
 }
 .ant-card-bordered {
+  padding: 5px;
+  width: 200px!important;
    margin: 5px 8px;
+  &:hover {
+    box-shadow: 0 0 20px #333;
+    background: #edeff2;
+  }
     img {
-        height: 300px;
+        height: 200px;
     }
+}
+.ant-avatar {
+  img {
+    height: auto;
+  }
+}
+.ant-card-body {
+  padding: 10px;
+  zoom: 1;
 }
 .list_book {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 .search_text {
     color: #3f3f3f;
