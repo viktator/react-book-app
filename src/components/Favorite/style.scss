@@ -2,3 +2,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.alert_wrapper {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%)
+}

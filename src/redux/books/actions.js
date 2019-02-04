@@ -8,6 +8,7 @@ export const FETCH_SUCCESS = `${prefix}/FETCH_SUCCESS`;
 export const FETCH_FAILURE = `${prefix}/FETCH_FAILURE`;
 export const DELETE_BOOK = `${prefix}/DELETE_BOOK`;
 
+
 export const deleteBook = (id) => ({
     type: DELETE_BOOK,
     payload: id
@@ -19,6 +20,7 @@ export const saveBook = id => (dispatch, getState) => {
     allBooks.push(book)
     localStorage.set('books', allBooks);
     dispatch(receiveFavBooks(allBooks))
+
 }
 export const deleteFromSave = (id) => (dispatch, getState) => {
     const books = getState().books.favoritesBooks.filter(book => book.id !== id);
@@ -42,7 +44,6 @@ export const fetchBooks = ({ q = '' }) => (dispatch) => {
     })
 
 }
-
 
 export const RECEIVE_FAVORITES = `${prefix}/RECEIVE_FAVORITES`;
 
