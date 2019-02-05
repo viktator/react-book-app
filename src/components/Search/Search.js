@@ -5,6 +5,7 @@ import './style.scss'
 import { fetchBooks, deleteBook, saveBook, SUCCESS_ALERT } from '../../redux/books/actions'
 import Book from '../Book/Book'
 import Loader from '../Loader'
+import PropTypes from 'prop-types';
 
 
 
@@ -46,6 +47,16 @@ const Search = Input.Search;
        
     
 }
+
+SearchInput.propTypes = {
+    books: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired,
+    deleteBook: PropTypes.func,
+    saveBook: PropTypes.func,
+    fetchBooks: PropTypes.func
+
+};
+
 export default connect(
     (state => ({ 
         books: state.books.booksList,

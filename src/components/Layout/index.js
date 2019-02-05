@@ -3,6 +3,7 @@ import {Layout, Menu, Breadcrumb, Icon,} from 'antd';
 import {connect} from 'react-redux'
 import {Link,withRouter } from "react-router-dom";
 import './style.scss'
+import PropTypes from 'prop-types';
   
   const {
     Header, Content, Footer, Sider,
@@ -61,6 +62,11 @@ import './style.scss'
       );
     }
   }
+
+SiderDemo.propTypes = {
+  booksCount: PropTypes.number
+
+};
   
 export default withRouter(connect((state) => ({
   booksCount: state.books.favoritesBooks.length || 0
