@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
-import {Card, Icon, Avatar} from 'antd';
+import {Card, Icon, Avatar} from 'antd'
 import {Link} from 'react-router-dom'
 import defaultImg from './default_img.jpg'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import {message} from "antd"
 
-const {Meta} = Card;
+const {Meta} = Card
 
 class Book extends Component {
 
@@ -13,17 +14,16 @@ class Book extends Component {
     }
 
     handleSave = () => {
-
         this.props.onSave(this.props.id)
+        message.info('Your book was added to Favorite')
     }
 
     render() {
-        const {imageLinks} = this.props.volumeInfo;
+        const {imageLinks} = this.props.volumeInfo
         const imgUrl = imageLinks && imageLinks.thumbnail ?
-            imageLinks.thumbnail : defaultImg;
+            imageLinks.thumbnail : defaultImg
 
         return (
-
             <Card
                 style={{width: 250}}
                 cover={<img alt="example" src={imgUrl}/>}
@@ -35,11 +35,9 @@ class Book extends Component {
                     <Meta
                         avatar={<Avatar src={imgUrl}/>}
                         title={this.props.volumeInfo.title}
-
                     />
                 </Link>
             </Card>
-
         )
     }
 }

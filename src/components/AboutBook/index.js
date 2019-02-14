@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Icon} from 'antd';
+import {Icon} from 'antd'
 import { Link } from 'react-router-dom'
 import './style.scss'
 
@@ -34,4 +34,4 @@ const AboutBook = ({ book: { volumeInfo}}) => {
 }
 
 export default connect((state, ownProps) => 
- ({ book: state.books.booksList.find((book) => book.id === ownProps.match.params.id) }))(AboutBook);
+ ({ book: state.books.booksList.find((book) => book.id === ownProps.match.params.id) }))(AboutBook)

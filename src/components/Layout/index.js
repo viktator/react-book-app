@@ -1,10 +1,11 @@
-import React from 'react';
-import {Layout, Menu, Breadcrumb, Icon,} from 'antd';
+import React from 'react'
+import {Layout, Menu, Breadcrumb, Icon,} from 'antd'
 import {connect} from 'react-redux'
-import {Link,withRouter } from "react-router-dom";
+import {Link,withRouter } from "react-router-dom"
 import './style.scss'
-import PropTypes from 'prop-types';
-  
+import PropTypes from 'prop-types'
+
+
   const {
     Header, Content, Footer, Sider,
   } = Layout;
@@ -16,11 +17,12 @@ import PropTypes from 'prop-types';
     };
   
     onCollapse = (collapsed) => {
-      console.log(collapsed);
-      this.setState({ collapsed });
+      console.log(collapsed)
+      this.setState({ collapsed })
     }
   
     render() {
+
       return (
         <Layout style={{ minHeight: '100vh' }}>
           <Sider

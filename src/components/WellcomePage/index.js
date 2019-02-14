@@ -3,6 +3,7 @@ import './style.scss'
 
 
 export default function Wellcome() {
+
     return (
         <div className='wellcome-container'>
             <span className='wellcome-text'>
