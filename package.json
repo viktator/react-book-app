@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.11.2",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "prop-types": "^15.6.2",
