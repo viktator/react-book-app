@@ -16,14 +16,14 @@ export default combineReducers({
     booksList(state = [], { type, payload }) {
         switch(type) {
             case FETCH_SUCCESS: return payload
-            case DELETE_BOOK: return state.filter((book) => book.id !== payload)
+            case DELETE_BOOK: return state.filter((book) => book.id !== payload);
             default: return state
         }
     },
 
     favoritesBooks(state = [], { type, payload }) {
         switch(type) {
-            case RECEIVE_FAVORITES: return payload
+            case RECEIVE_FAVORITES: return payload;
             default: return state
         }
     }
