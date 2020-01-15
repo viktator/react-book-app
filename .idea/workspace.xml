@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974ee2b1-19f1-4823-accf-94f0ad7c68c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Book/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Book/Book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Favorite/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorite/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/books/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/books/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/books/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/books/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,26 +66,38 @@
       <workItem from="1548500379514" duration="8996000" />
       <workItem from="1549368942301" duration="2696000" />
       <workItem from="1550147580980" duration="1347000" />
-      <workItem from="1579115763015" duration="1489000" />
+      <workItem from="1579115763015" duration="3417000" />
     </task>
+    <task id="LOCAL-00001" summary="refactoring">
+      <created>1579117419271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579117419271</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#ESLint" timestamp="1579115834121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1579115834121" />
-    <state x="284" y="52" key="CommitChangelistDialog2" timestamp="1579117366169">
+    <state x="284" y="52" key="CommitChangelistDialog2" timestamp="1579117419084">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="284" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579117366169" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1579117380549">
+    <state x="284" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579117419084" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1579117423882">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579117380549" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579117423882" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579117358957">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
